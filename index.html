@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Mohid</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200 overflow-x-hidden relative">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-gray-900 flex flex-col items-center justify-center z-50">
+        <div class="loading-logo w-32 h-32 bg-gradient-radial from-cyan-400 to-pink-500 rounded-full animate-spin animate-pulse"></div>
+        <div class="loading-text mt-6 text-2xl text-gray-200 animate-pulse">Booting Portfolio-Mohid...</div>
+        <div class="press-enter mt-4 text-xl text-cyan-400 animate-blink">Press Enter or Click to Launch</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 bg-gray-900 bg-opacity-95 backdrop-blur-lg py-5">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-4xl font-bold font-orbitron neon-text">Portfolio-Mohid</h1>
+            <div class="space-x-8">
+                <a href="#home" class="text-xl hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="text-xl hover:text-cyan-400 transition-colors">About</a>
+                <a href="#skills" class="text-xl hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#projects" class="text-xl hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="text-xl hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center p-12 bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/random/1920x1080?cyber')">
+        <div class="text-center particles">
+            <h1 class="text-7xl md:text-9xl font-bold font-orbitron neon-text mb-6">Mohid</h1>
+            <p class="text-3xl md:text-4xl mb-8">Elite Developer, Coder & Ethical Hacker</p>
+            <a href="#contact" class="bg-cyan-400 text-gray-900 px-10 py-5 rounded-full font-semibold hover-scale neon-border text-xl">Connect with Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center p-12 relative">
+        <div class="container mx-auto text-center particles">
+            <h2 class="text-6xl font-bold font-orbitron neon-text mb-10">About Me</h2>
+            <p class="text-2xl max-w-4xl mx-auto">
+                I'm Mohid, a tech prodigy with a passion for coding, hacking, and innovation. I specialize in white, grey, and black hat hacking, game exploiting (Roblox and beyond), and building cutting-edge web and API solutions. My expertise spans a vast array of programming languages and tools, from C++ to Rust, and I thrive on creating projects that push technological boundaries. Whether it's developing secure systems or exploring the depths of game engines, I'm your go-to coder for epic solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-screen flex items-center justify-center p-12 bg-gray-800 relative">
+        <div class="container mx-auto particles">
+            <h2 class="text-6xl font-bold font-orbitron neon-text mb-10 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Programming Languages</h3>
+                    <p>JavaScript, Node.js, C++, C#, Python, Java, Go, Rust, Lua, Fortran, PHP, Ruby, Swift, Kotlin, TypeScript</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Hacking & Security</h3>
+                    <p>White Hat, Grey Hat, Black Hat, Penetration Testing, Game Exploiting (Roblox, Unity), Memory Manipulation</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Tools & Platforms</h3>
+                    <p>Raspberry Pi, Git, Docker, Visual Studio, VS Code, Linux, Metasploit, Burp Suite, Wireshark</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Expertise</h3>
+                    <p>Web Development, API Development, Embedded Systems, Game Development, IoT, Blockchain, Reverse Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen flex items-center justify-center p-12 relative">
+        <div class="container mx-auto particles">
+            <h2 class="text-6xl font-bold font-orbitron neon-text mb-10 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Roblox Exploit Suite</h3>
+                    <p>A C# and Lua-based tool for Roblox, featuring advanced memory manipulation, script execution, and a custom UI for seamless exploiting.</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Smart Home IoT System</h3>
+                    <p>A Python and Node.js project controlling home devices via Raspberry Pi, with a Go-based REST API and React dashboard.</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Game Engine in C++</h3>
+                    <p>A custom C++ game engine with OpenGL rendering, physics simulation, and support for 2D/3D game development.</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Blockchain API in Rust</h3>
+                    <p>A high-performance Rust API for blockchain transactions, integrated with a JavaScript frontend and Ethereum smart contracts.</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Penetration Testing Tool</h3>
+                    <p>A Python-based tool for network scanning and vulnerability assessment, using Metasploit and custom scripts.</p>
+                </div>
+                <div class="project-card neon-border hover-scale">
+                    <h3 class="text-3xl font-semibold">Fortran Simulation</h3>
+                    <p>A Fortran-based simulation for computational physics, optimized for high-performance computing environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center justify-center p-12 bg-gray-800 relative">
+        <div class="container mx-auto text-center particles">
+            <h2 class="text-6xl font-bold font-orbitron neon-text mb-10">Contact Me</h2>
+            <p class="text-2xl mb-8">Ready to collaborate on groundbreaking projects? Drop me a line!</p>
+            <p class="text-xl mb-6">Email: <a href="mailto:naseebnoveera@gmail.com" class="text-cyan-400 hover:underline">naseebnoveera@gmail.com</a></p>
+            <a href="mailto:naseebnoveera@gmail.com" class="bg-cyan-400 text-gray-900 px-10 py-5 rounded-full font-semibold hover-scale neon-border text-xl">Send Email</a>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top hover-scale fixed bottom-8 right-8 bg-cyan-400 text-gray-900 p-4 rounded-full cursor-pointer hidden text-2xl" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
+    <!-- JavaScript -->
+    <script>
+        // Loading Screen
+        const loadingScreen = document.getElementById('loading-screen');
+        function hideLoadingScreen() {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => { loadingScreen.style.display = 'none'; }, 500);
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') hideLoadingScreen();
+        });
+        loadingScreen.addEventListener('click', hideLoadingScreen);
+
+        // Scroll to Top Button
+        const scrollToTop = document.querySelector('.scroll-to-top');
+        window.addEventListener('scroll', () => {
+            scrollToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
+        // Moving Language Icons
+        const languages = [
+            { name: 'js', url: 'https://img.icons8.com/color/48/000000/javascript.png' },
+            { name: 'python', url: 'https://img.icons8.com/color/48/000000/python.png' },
+            { name: 'cpp', url: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png' },
+            { name: 'csharp', url: 'https://img.icons8.com/color/48/000000/c-sharp-logo.png' },
+            { name: 'java', url: 'https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png' },
+            { name: 'go', url: 'https://img.icons8.com/color/48/000000/golang.png' },
+            { name: 'rust', url: 'https://img.icons8.com/color/48/000000/rust.png' },
+            { name: 'lua', url: 'https://img.icons8.com/color/48/000000/lua.png' },
+            { name: 'fortran', url: 'https://img.icons8.com/color/48/000000/fortran.png' },
+            { name: 'php', url: 'https://img.icons8.com/color/48/000000/php.png' },
+            { name: 'ruby', url: 'https://img.icons8.com/color/48/000000/ruby-programming-language.png' },
+            { name: 'swift', url: 'https://img.icons8.com/color/48/000000/swift.png' },
+            { name: 'kotlin', url: 'https://img.icons8.com/color/48/000000/kotlin.png' },
+            { name: 'typescript', url: 'https://img.icons8.com/color/48/000000/typescript.png' }
+        ];
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            languages.forEach((lang, index) => {
+                const icon = document.createElement('div');
+                icon.className = 'language-icon absolute w-16 h-16 bg-cover opacity-80 animate-float animate-pulse';
+                icon.style.backgroundImage = `url(${lang.url})`;
+                icon.style.animationDelay = `${index * 1.5}s`;
+                icon.style.left = `${Math.random() * 100}vw`;
+                icon.style.top = `${Math.random() * 100}vh`;
+                section.appendChild(icon);
+            });
+        });
+
+        // Particle Effects
+        const particleSections = document.querySelectorAll('.particles');
+        particleSections.forEach(section => {
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle absolute w-1.5 h-1.5 bg-cyan-400 rounded-full animate-particle opacity-50';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                section.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>
